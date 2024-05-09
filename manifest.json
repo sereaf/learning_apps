@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "LearningApps",
+	"version": "0.1.0",
+	"permissions": [
+		"tabs"
+	],
+	"background": {
+		"scripts": [
+			"backgound.js"
+		]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://learningapps.org/*"
+			],
+			"js": [
+				"cards.js",
+				"crossword.js",
+				"millionair.js",
+				"main.js"
+			]
+		}
+	]
+}

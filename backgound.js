@@ -1,0 +1,2 @@
+getSolution();
+function getSolution() {}
